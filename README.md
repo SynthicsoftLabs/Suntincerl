@@ -7,6 +7,8 @@ SuntinCerl ProcGuard is a self-contained, real-time behavioral EDR engine for Wi
 
 ProcGuard requires only psutil, operates fully offline, and delivers enterprise-grade functionality suitable for researchers, blue teams, home users, SOC automation, and advanced operators.
 
+![SuntinCerl Screenshot](suntilcerl-screenshot-1.png)
+
 ## Features
 
 ### Hybrid ML Scoring Engine
