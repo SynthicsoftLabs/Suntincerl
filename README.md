@@ -89,6 +89,7 @@ pip install psutil
 ```
 
 git clone https://github.com/SynthicsoftLabs/Suntincerl
+
 cd Suntincerl
 
 ```
