@@ -88,7 +88,7 @@ pip install psutil
 2. Clone the repository:
 ```
 
-git clone [https://github.com/SynthicsoftLabs/Suntincerl](https://github.com/SynthicsoftLabs/Suntincerl)
+git clone https://github.com/SynthicsoftLabs/Suntincerl
 cd Suntincerl
 
 ```
