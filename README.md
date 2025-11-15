@@ -1,4 +1,4 @@
-# ProcGuard v6.0 - Enhanced Windows EDR Sentinel
+# Suntincerl ProcGuard v6.0 - Enhanced Windows EDR Sentinel
 
 ## What's New in v6.0
 
