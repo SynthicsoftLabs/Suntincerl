@@ -1,0 +1,153 @@
+{
+  "_comment": "ProcGuard v6.0 Configuration File",
+  "_comment_threshold": "Detection threshold - lower = more sensitive (0.70-0.90 recommended)",
+  "threshold": 0.82,
+  
+  "_comment_scan_interval": "Seconds between scans (3-10 recommended)",
+  "scan_interval": 5.0,
+  
+  "_comment_safe_mode": "If true, only logs events. If false, can kill/block",
+  "safe_mode": true,
+  
+  "_comment_ui_mode": "Display format: 'layman' (detailed) or 'analyst' (compact)",
+  "ui_mode": "layman",
+  
+  "_comment_color_output": "Use ANSI colors in terminal output",
+  "color_output": true,
+  
+  "_comment_feature_flags": "=== ENHANCED DETECTION FEATURES (v6.0) ===",
+  
+  "_comment_file_monitoring": "Monitor suspicious file system writes",
+  "enable_file_monitoring": true,
+  
+  "_comment_persistence": "Detect persistence mechanism attempts",
+  "enable_persistence_detection": true,
+  
+  "_comment_beaconing": "Detect C2 beaconing patterns",
+  "enable_network_beaconing": true,
+  
+  "_comment_process_tree": "Analyze parent-child process relationships",
+  "enable_process_tree_analysis": true,
+  
+  "_comment_beaconing_params": "=== BEACONING DETECTION PARAMETERS ===",
+  
+  "_comment_beaconing_window": "Seconds to track connection history (300 = 5 min)",
+  "beaconing_window": 300,
+  
+  "_comment_beaconing_tolerance": "Allowed variance in beacon intervals (seconds)",
+  "beaconing_tolerance": 10,
+  
+  "_comment_enforcement": "=== ENFORCEMENT OPTIONS (DANGEROUS) ===",
+  
+  "_comment_auto_kill": "Automatically terminate suspicious processes (DANGEROUS)",
+  "auto_kill": false,
+  
+  "_comment_auto_block": "Automatically create firewall rules (DANGEROUS)",
+  "auto_block": false,
+  
+  "_comment_firewall_dry_run": "Log firewall commands without executing (safe testing)",
+  "firewall_dry_run": true,
+  
+  "_comment_logging": "=== LOGGING CONFIGURATION ===",
+  
+  "_comment_event_log_path": "Path to event log file",
+  "event_log_path": "procguard_events.jsonl",
+  
+  "_comment_max_log_size": "Max log size in MB before rotation",
+  "max_log_size_mb": 5,
+  
+  "_comment_rotation_backups": "Number of rotated log files to keep",
+  "rotation_backups": 3,
+  
+  "_comment_max_events": "Max events logged per minute (rate limiting)",
+  "max_events_per_minute": 400,
+  
+  "_comment_baseline": "=== BASELINE CONFIGURATION ===",
+  
+  "_comment_baseline_path": "Path to baseline data file",
+  "baseline_path": "procguard_baseline.json",
+  
+  "_comment_baseline_duration": "Seconds to train baseline (180 = 3 min)",
+  "baseline_duration": 180,
+  
+  "_comment_scoring": "=== SCORING PARAMETERS ===",
+  
+  "_comment_escalation_boost": "Score boost for repeat offenders",
+  "escalation_score_boost": 0.18,
+  
+  "_comment_alert_flags": "=== ALERT CONFIGURATION ===",
+  
+  "_comment_alert_listen": "Alert on processes opening listening ports",
+  "alert_on_listen_ports": true,
+  
+  "_comment_alert_remote": "Alert on processes making remote connections",
+  "alert_on_remote_connections": true,
+  
+  "_comment_whitelists": "=== WHITELISTS & BLACKLISTS ===",
+  
+  "_comment_everyday_apps": "Trusted apps to skip scanning (reduce noise)",
+  "everyday_apps": [
+    "chrome.exe",
+    "msedge.exe",
+    "firefox.exe",
+    "opera.exe",
+    "brave.exe",
+    "winword.exe",
+    "excel.exe",
+    "powerpnt.exe",
+    "onenote.exe",
+    "outlook.exe",
+    "notepad.exe",
+    "wordpad.exe",
+    "code.exe",
+    "notepad++.exe",
+    "explorer.exe",
+    "dllhost.exe",
+    "runtimebroker.exe",
+    "svchost.exe",
+    "services.exe",
+    "lsass.exe",
+    "csrss.exe",
+    "taskmgr.exe",
+    "dwm.exe",
+    "conhost.exe",
+    "fontdrvhost.exe"
+  ],
+  
+  "_comment_known_bad": "Known malicious/hacking tool names (auto high score)",
+  "known_bad_names": [
+    "mimikatz.exe",
+    "procdump.exe",
+    "cobaltstrike.exe",
+    "nc.exe",
+    "netcat.exe",
+    "pscp.exe",
+    "plink.exe",
+    "certutil.exe",
+    "bitsadmin.exe"
+  ],
+  
+  "_comment_suspicious_lolbins": "Living-off-the-land binaries (context-sensitive)",
+  "suspicious_lolbins": [
+    "powershell.exe",
+    "wscript.exe",
+    "cscript.exe",
+    "mshta.exe",
+    "regsvr32.exe",
+    "rundll32.exe",
+    "wmic.exe",
+    "certutil.exe"
+  ],
+  
+  "_comment_trusted_domains": "Trusted domains (for future DNS analysis)",
+  "trusted_domains": [
+    "github.com",
+    "githubusercontent.com",
+    "openai.com",
+    "chat.openai.com",
+    "google.com",
+    "microsoft.com",
+    "cloudflare.com",
+    "windows.com"
+  ]
+}
